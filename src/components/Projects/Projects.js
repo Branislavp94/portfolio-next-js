@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../styles/GlobalComponents/Button";
 
 import {
   BlogCard,
@@ -20,6 +21,9 @@ import {
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
+const handleClick = () => {
+  window.location.href = "https://github.com/Branislavp94?tab=repositories";
+};
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -59,6 +63,7 @@ const Projects = () => (
         );
       })}
     </GridContainer>
+    <Button onClick={handleClick}>View More</Button>
   </Section>
 );
 
