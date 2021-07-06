@@ -11,7 +11,7 @@ export const CarouselContainer = styled.ul`
 
   margin-left: 32px;
   &:first-of-type {
-    margin-left: 0px;
+    margin-left: 20px;
   }
 
   margin-bottom: 80px;
@@ -28,7 +28,7 @@ export const CarouselContainer = styled.ul`
     scroll-snap-type: x mandatory;
     touch-action: pan-x;
     justify-content: initial;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
   }
 `;
 export const CarouselMobileScrollNode = styled.div`
@@ -48,8 +48,8 @@ export const CarouselItem = styled.div`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    margin-left: 20px;
-    min-width: 100px;
+    margin-left: 5px;
+    min-width: 50px;
     background: #0e131f;
     padding: 4px;
     align-content: start;
